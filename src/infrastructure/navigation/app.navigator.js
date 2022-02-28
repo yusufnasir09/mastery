@@ -16,17 +16,18 @@ export const MyTab = () => {
                     headerShown: false,
                     tabBarActiveTintColor: colors.brand.primary,
                     tabBarInactiveTintColor: colors.brand.muted,
+                    tabBarStyle: { height: '7%' },
                 }}>
                 <Tab.Screen name="Home" component={HomeScreen}
                     options={{
                         tabBarIcon: ({ color, size }) => (
-                            <MaterialCommunityIcons name="home" color={color} size={size} />
+                            <MaterialCommunityIcons name="home-circle" color={color} size={30} />
                         ),
                     }} />
                 <Tab.Screen name="Settings" component={SettingsScreen}
                     options={{
                         tabBarIcon: ({ color, size }) => (
-                            <MaterialCommunityIcons name="tools" color={color} size={size} />
+                            <MaterialCommunityIcons name="account-settings-outline" color={color} size={30} />
                         ),
                     }} />
             </Tab.Navigator>
